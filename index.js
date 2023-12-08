@@ -21,6 +21,4 @@ app.get('https://moneyapi-emxw.vercel.app/api/transactions', async(req,res)=>{
     const transactions = await Transaction.find();
     res.json(transactions)
 })
-app.listen(4000)
-// kharelpawannp
-// hktH4d3pJ9JxI35f
+app.listen('https://moneyapi-emxw.vercel.app')
