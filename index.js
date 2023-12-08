@@ -21,4 +21,4 @@ app.get('https://moneyapi.vercel.app/api/transactions', async(req,res)=>{
     const transactions = await Transaction.find();
     res.json(transactions)
 })
-app.listen('https://moneyapi.vercel.app/')
+app.listen('https://moneyapi.vercel.app')
