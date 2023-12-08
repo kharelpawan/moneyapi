@@ -17,7 +17,7 @@ app.post('/api/transaction', async(req,res)=>{
 })
 
 app.get('/api/transactions', async(req,res)=>{
-    await mongoose.connect(process.env.MONGO_URL)
+    await mongoose.connect('mongodb+srv://kharelpawannp:hktH4d3pJ9JxI35f@cluster0.g2ggnyb.mongodb.net/?retryWrites=true&w=majority')
     const transactions = await Transaction.find();
     res.json(transactions)
 })
